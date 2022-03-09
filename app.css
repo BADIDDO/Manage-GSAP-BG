@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --bgColor : #F25F3A ;
+    --Title : clamp(1.975rem, 10vw, 2.5rem);
+    --blue : #242D52;
+    --p : #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    width: 100%;
+    background-image: url(images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    height: 90px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+nav {
+    width: 100%;
+    height: 90px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+nav .logo {
+    cursor: pointer;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    margin: 0 10px;
+    color: #242D52;
+    font-weight: 600;
+    transition: .4s;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+nav ul li a.active {
+    background-color: var(--bgColor);
+}
+nav ul li a:hover {
+    color: #C7CAD3;
+}
+nav button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--bgColor);
+    border-radius: 20px;
+    color: white;
+    transition: .4s;
+}
+nav button:hover {
+    background-color: #f25f3a80;
+}
+nav .grid {
+    position: absolute;
+    font-size: 30px;
+    align-items: center;
+    color: #242D52;
+    right: 20px;
+    display: none;
+}
+/* Start Intro */
+.intro {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
+    align-items: center;
+    margin-top: 50px;
+}
+.intro-content {
+padding: 40px;
+}
+.intro-content h1 {
+font-size: var(--Title);
+color: var(--blue);
+width: 80%;
+}
+.intro-content p {
+    width: 80%;
+    color: var(--p);
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.intro-content button {
+    margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--bgColor);
+    border-radius: 20px;
+    color: white;
+    transition: .4s;
+}
+.intro-content button:hover {
+    background-color: #f25f3a80;
+}
+/* End Intro */
+
+/* Start Feature */
+.features {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.features-content h1 {
+    font-size: var(--Title);
+    color: var(--blue);
+}
+.features-content p {
+    color: var(--p);
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.features-types {
+    display: flex;
+    flex-direction: column;
+}
+.features-types .first-type {
+    padding-bottom: 20px;
+}
+.features-types .first-type .title-type {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.title-type span {
+    background-color: var(--bgColor);
+    padding: 10px 20px;
+    border-radius: 45%;
+    cursor: pointer;
+}
+.title-type h1 {
+color: var(--blue);
+font-size: 1rem;
+}
+.first-type p {
+    font-size: .8rem;
+    font-weight: 600;
+    padding-left: 100px;
+    line-height: 1.6;
+}
+/* End Feature */
+
+
+/* Start TEams */
+.team h1 {
+    color: var(--blue);
+    font-size: var(--Title);
+    text-align: center;
+    padding-bottom: 50px;
+}
+.teams {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.first-team {
+    background-color: #fafafa8e;
+    border-radius: 8px;
+    padding: 40px;
+    position: relative;
+    transition: .4s;
+    
+}
+.first-team:hover {
+    background-image: linear-gradient(to right ,#F25F3A , #242D52 );
+    transform: scale(1.1);
+}
+.first-team img {
+    width: 20%;
+}
+.first-team h1 {
+font-size: 1rem;
+padding-bottom: 20px;
+}
+.team button {
+   margin: 0 auto;
+   margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--bgColor);
+    border-radius: 20px;
+    color: white;
+    transition: .4s; 
+    display: flex;   
+}
+.team button:hover {
+    background-color: #f25f3a80;
+} 
+
+/* Start CArd */
+.card {
+    margin-top: 50px;
+    width: 100%;
+    height: 250px;
+    background-color: var(--bgColor);
+}
+.card-info {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-info h1 {
+   color: white;
+   font-size: var(--Title);
+}
+.card-info button {
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     background-color: white;
+     border-radius: 20px;
+     color: var(--bgColor);
+     transition: .4s;   
+     font-weight: 600; 
+}
+.card-info button:hover {
+    color: #f25f3a80 ;
+}
+/* End CArd */
+
+
+/* Strat Footer  */
+footer {
+    width: 100%;
+    background-color: #1D1E25;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-content .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.icons i {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .4s;
+}
+.icons i:hover {
+    color: var(--bgColor);
+}
+
+.second {
+    display: flex;
+    gap: 30px;
+}
+.second a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transition: .4s;
+    padding-bottom: 8px;
+}
+.second a:hover {
+    color: var(--bgColor);
+}
+.third {
+    display: flex;
+    flex-direction: column;
+}
+.third .box {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.box input {
+    padding: 15px 20px;
+    border-radius: 30px;   
+    outline: none;
+    border: none;
+}
+.box input:focus {
+    border: 1px solid var(--bgColor);
+}
+.box button {
+    padding: 5px 15px;
+    font-weight: 700;
+    background-color:brown;
+    border: none;
+    transition: .4s;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.box button:hover {
+    background-color: var(--bgColor);
+}
+.third h6 {
+    padding-top: 30px;
+}
+footer .right {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: var(--blue);
+}
+/* End Footer  */
